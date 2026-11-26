@@ -49,3 +49,14 @@ Deliver a local inference adapter, deny-by-default permission kernel, bounded ag
 Authorized environments only. No secrets or confidential material. No fabricated benchmarks. No unchecked consequential actions. Every claim must survive a reproducible test.
 
 **THE EDGE IS NOT A LIMIT. IT IS A DESIGN PRINCIPLE.**
+
+## 05 / Boot sequence
+
+Python 3.10+, no external dependencies:
+
+```sh
+python -m blackmamba
+python -m unittest discover -s tests -v
+```
+
+[Prototype 001 technical brief](docs/FIRST_LIGHT.md). Initial deterministic dispatcher and synthetic triage are implemented; local model inference and process isolation remain planned. Tests supplied, execution not yet verified.
